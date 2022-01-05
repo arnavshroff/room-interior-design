@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Textures</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <a-sky
+        src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/sky.jpg"
+      ></a-sky>
+
+      <a-assets timeout="10000">
+
+        <a-asset-item id="football" src="./models/football/scene.gltf"></a-asset-item>
+        <a-asset-item id="almirah" src="./models/almirah/scene.gltf"></a-asset-item>
+        <a-asset-item id="chair" src="./models/chair/scene.gltf"></a-asset-item>
+        <a-asset-item id="table" src="./models/table/scene.gltf"></a-asset-item>
+        <a-asset-item id="bed" src="./models/bed/scene.gltf"></a-asset-item>
+        <a-asset-item id="bookshelf" src="./models/bookshelf/scene.gltf"></a-asset-item>
+        <a-asset-item id="plant1" src="./models/plant1/scene.gltf"></a-asset-item>
+        <a-asset-item id="boy" src="./models/boy/scene.gltf"></a-asset-item>
+        <a-asset-item id="clock" src="./models/clock/scene.gltf"></a-asset-item>
+        <a-asset-item id="ac" src="./models/ac/scene.gltf"></a-asset-item>
+        <a-asset-item id="window" src="./models/window/scene.gltf"></a-asset-item>
+      </a-assets>
+      <a-plane
+        id="ground"
+        src="https://thumbs.dreamstime.com/b/light-green-carpet-texture-d-render-digital-illustration-background-rendering-83976925.jpg"
+        position="0 0 0"
+        rotation="-90 0 0"
+        width="20"
+        height="10"
+      ></a-plane>
+
+      <a-plane
+        id="carpet"
+        src="https://envato-shoebox-0.imgix.net/9fb6/3763-d394-416d-848b-127e7cbede4e/IMG_4059.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=700&s=d47028c39f9a09b46889ee5d359acbb6"
+        position="0 0.1 2"
+        rotation="-90 0 0"
+        width="15"
+        height="5"
+      ></a-plane>
+
+      <a-box
+        id="wall"
+        src="https://t4.ftcdn.net/jpg/01/90/51/83/360_F_190518339_hKoobCcAYeiwi9DsOPZzKbKBo4ZLrrUP.jpg"
+        position="0 6.5 -4.5"
+        width="20"
+        height="13"
+      >
+      </a-box>
+
+      <a-box
+        id="wall2"
+        src="https://t4.ftcdn.net/jpg/01/90/51/83/360_F_190518339_hKoobCcAYeiwi9DsOPZzKbKBo4ZLrrUP.jpg"
+        position="-10 6.5 -4.5"
+        rotation= "0 90 0"
+        width="19"
+        height="13"
+      >
+      </a-box>
+      <a-entity>
+        <a-entity position="6.5 1.5 0" rotation="0 55 0" scale="0.015 0.015 0.015" gltf-model="#football" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="7.5 0.25 3.75" rotation="0 180 0" scale ="0.01 0.01 0.01 " gltf-model="#almirah" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="-3 0.25 4" rotation="0 270 0" scale ="3 3 3 " gltf-model="#chair" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="-6 0.25 3.5" rotation="0 270 0" scale ="0.4 0.4 0.4 " gltf-model="#table" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="1.9 2.5 -8" rotation="0 360 0" scale ="0.4 0.4 0.9 " gltf-model="#bed" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="-5 1.5 -4" rotation="0 270 0" scale ="0.6 0.6 0.6 " gltf-model="#bookshelf" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="-7.5 0 -3" rotation="0 270 0" scale ="0.6 0.6 0.6 " gltf-model="#plant1" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="0 0 4" rotation="0 360 0" scale ="6 6 6" gltf-model="#boy" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="-4 8 0" rotation="0 360 0" scale ="6 6 6" gltf-model="#clock" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="4 8 0" rotation="0 360 0" scale ="0.15 0.15 0.15" gltf-model="#ac" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+      <a-entity>
+        <a-entity position="-11 2 0" rotation="0 360 0" scale ="0.1 0.1 0.1" gltf-model="#window" shadow="cast: true;">
+        </a-entity>
+      </a-entity>
+
+      <a-box
+        id="wall3"
+        src="https://t4.ftcdn.net/jpg/01/90/51/83/360_F_190518339_hKoobCcAYeiwi9DsOPZzKbKBo4ZLrrUP.jpg"
+        position="10 6.5 -4.5"
+        rotation= "0 90 0"
+        width="19"
+        height="13"
+      >
+      </a-box>
+      <a-box
+        id="wall4"
+        position="0 12.5 -4.5"
+        rotation= "90 0 0"
+        width="19"
+        height="19"
+        color="orange"
+      >
+      </a-box>
+
+      <!-- Lamp -->
+
+      <a-cone
+        color="indigo"
+        position="0 7.5 0"
+        radius-top="0.5"
+        radius-bottom="2"
+      >
+        <a-sphere color="white" position="0 -0.5 0"></a-sphere>
+        <a-cylinder
+          color="indigo"
+          radius="0.15"
+          height="4"
+          position="0 2 0"
+        ></a-cylinder>
+      </a-cone>
+
+      
+
+      <!--  --------- CAMERA --------- -->
+
+      <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15">
+      </a-camera>
+    </a-scene>
+    <!-- Closing scene -->
+  </body>
+</html>
